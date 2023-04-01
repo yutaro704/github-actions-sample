@@ -1,4 +1,4 @@
-name: Sample actions
+name: sample actions
 
 on:
   push:
@@ -8,4 +8,4 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-        run: echo Hello, world!
+      - run: echo Hello, world!
