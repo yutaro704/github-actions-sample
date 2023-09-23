@@ -15,9 +15,8 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checout@v3
-        with:
-          token: ${{ secrets.GIT_HUB_TOKEN }}
+      - uses: actions/checkout@v3
+
       - uses: actions/setup-node@v3
         with:
           node-version: 16:x
