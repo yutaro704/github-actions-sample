@@ -12,6 +12,8 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checout@v3
       - uses: actions/setup-node@v3
